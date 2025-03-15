@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mini_app/core/resources/route_manager.dart';
-import 'package:mini_app/features/onBoarding/onBoarding_page.dart';
+import 'package:mini_app/features/onBoarding/screens/onBoarding_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

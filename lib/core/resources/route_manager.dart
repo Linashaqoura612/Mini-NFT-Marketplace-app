@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mini_app/features/onBoarding/onBoarding_page.dart';
-import 'package:mini_app/features/onBoarding/onBoarding_page.dart';
+import 'package:mini_app/features/onBoarding/screens/onBoarding_page.dart';
+import 'package:mini_app/features/onBoarding/screens/onBoarding_page.dart';
 
 class Route_manager {
   static Map<String, WidgetBuilder> routes = {
