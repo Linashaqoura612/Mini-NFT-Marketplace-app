@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:mini_app/core/resources/route_manager.dart';
 import 'package:mini_app/core/resources/size_Manager.dart';
 import 'package:mini_app/core/resources/strings_manager.dart';
 
@@ -53,7 +54,7 @@ class CustomeCardOnboarding extends StatelessWidget {
               Container(
                 width: Width.w200,
                 decoration: BoxDecoration(
-                  color:ColorManager.kColorlightBlue,
+                  gradient: LinearGradient(colors: [Color(0xff97A2F6),Colors.white]),
                   borderRadius: BorderRadius.circular(Radius.R40),
                   border:
                   Border.all(color: ColorManager.kColorWhite),
@@ -69,10 +70,12 @@ class CustomeCardOnboarding extends StatelessWidget {
                       //     borderRadius:
                       //         BorderRadius.circular(20),
                       // ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, Route_name.khome_page);
+                      },
                       child: Text(
                        StringsManager.BtnTitleCardOnBoarding,
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: FontSize.kFontSize20_04),
                       ),
                     ),
                   ),
